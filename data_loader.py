@@ -1,6 +1,7 @@
 import pandas as pd
-def load_data(file_path):
-    """
-    Загрузка данных из CSV файла.
-    """
+class DataLoader:
+  def load_datacsv(file_path):
     return pd.read_csv(file_path)
+  
+  def load_dataxcl(file_path):
+    return pd.read_excel(file_path)
